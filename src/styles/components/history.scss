@@ -1,0 +1,32 @@
+.listHistory {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+
+  .list {
+    li {
+      width: 200px;
+      height: 40px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+
+      padding: 0 15px;
+      list-style-type: none;
+      background: $white;
+      border: 0;
+      box-shadow: $box-shadow;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  a {
+    margin-top: 20px;
+  }
+}

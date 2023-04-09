@@ -1,0 +1,64 @@
+.controls {
+  width: 380px;
+  height: 195px;
+  background: $white;
+  box-shadow: $box-shadow;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.managementControl {
+  width: 340px;
+  height: 31px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  color: $white;
+  border: 0;
+  border-radius: 5px;
+
+  cursor: pointer;
+  &.eat {
+    background-color: $health;
+    box-shadow: 0px 0px 3px rgba(231, 76, 60, 0.5);
+  }
+  &.drink {
+    background-color: $thirst;
+    box-shadow: 0px 0px 3px rgba(52, 152, 219, 0.5);
+  }
+  &.relax {
+    background-color: $hunger;
+    box-shadow: 0px 0px 3px rgba(230, 126, 34, 0.5);
+  }
+  &.work {
+    background-color: $fatigue;
+    box-shadow: 0px 0px 3px rgba(149, 165, 166, 0.5);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .managementControl {
+    width: 279px;
+  }
+  .controls {
+    width: 319px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .managementControl {
+    width: 280px;
+  }
+  .controls {
+    width: 320px;
+  }
+}

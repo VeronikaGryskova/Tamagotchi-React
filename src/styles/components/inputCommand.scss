@@ -1,0 +1,33 @@
+.inputCommand {
+  width: 780px;
+  height: 40px;
+  padding: 10px;
+  background: $white;
+  border: 0;
+  box-shadow: $box-shadow;
+  resize: none;
+
+  &::placeholder {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    border: 0;
+    resize: none;
+    color: #bdc3c7;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .inputCommand {
+    width: 658px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .inputCommand {
+    width: 300px;
+    height: 100px;
+  }
+}
